@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,44 +7,60 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/xLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eje X"
-        android:textSize="18sp" />
+        android:text="ACELEROMETRO"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X "
+        android:textSize="16sp"/>
 
     <ProgressBar
         android:id="@+id/xProgressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100" />
+        android:max="100"/>
 
     <TextView
-        android:id="@+id/yLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eje Y"
-        android:textSize="18sp" />
+        android:text="Y "
+        android:textSize="16sp"/>
 
     <ProgressBar
         android:id="@+id/yProgressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100" />
+        android:max="100"/>
 
     <TextView
-        android:id="@+id/zLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Eje Z"
-        android:textSize="18sp" />
+        android:text="Z "
+        android:textSize="16sp"/>
 
     <ProgressBar
         android:id="@+id/zProgressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:max="100" />
+        android:max="100"/>
+
+    <TextView
+        android:id="@+id/thudStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOBLE TOQUE: NO DETECTADO"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
 </LinearLayout>
